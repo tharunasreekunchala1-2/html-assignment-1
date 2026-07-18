@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFOMAX COMPUTER ACADEMY</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('c:\Users\DELL\Downloads\laptop.jpg');
+            background-size: cover;
+            background-position: center;
+            border: 2px solid #333;
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            overflow: hidden; /* Keeps the animation contained */
+        }
+
+        .welcome-text {
+            font-size: 1rem;
+            color: #ccc;
+            font-style: italic;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .main-heading {
+            font-size: 2.5rem;
+            color: #ff4d4d;
+            font-weight: bold;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        .sub-heading {
+            font-size: 2rem;
+            color: #ffffff;
+            font-weight: bold;
+            margin-bottom: 40px;
+            letter-spacing: 4px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Marquee Container Setup */
+        .marquee-wrapper {
+            background-color: rgba(255, 255, 255, 0.95);
+            border-left: 5px solid #ff4d4d;
+            border-radius: 5px;
+            max-width: 750px;
+            margin: 0 auto;
+            height: 150px; /* Fixed height to control viewing window */
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        /* Scrolling Content */
+        .marquee-content {
+            color: #333333;
+            padding: 20px;
+            line-height: 1.6;
+            font-size: 0.95rem;
+            text-align: justify;
+            position: absolute;
+            width: 100%;
+            animation: scrollUp 15s linear infinite;
+        }
+
+        /* Pause scrolling on mouse hover */
+        .marquee-wrapper:hover .marquee-content {
+            animation-play-state: paused;
+        }
+
+        /* Vertical Animation Definition */
+        @keyframes scrollUp {
+            0% {
+                transform: translateY(150px); /* Start completely below the box */
+            }
+            100% {
+                transform: translateY(-100%); /* End completely above the box */
+            }
+        }
+
+        @media (max-width: 600px) {
+            .main-heading { font-size: 1.8rem; }
+            .sub-heading { font-size: 1.5rem; }
+            .marquee-wrapper { height: 180px; } /* Slightly taller for smaller screens */
+            .marquee-content { font-size: 0.85rem; padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="welcome-text">Welcome to INFOMAX Official Website</div>
+        
+        <h1 class="main-heading">INFOMAX COMPUTER</h1>
+        <h2 class="sub-heading">ACADEMY</h2>
+
+        <!-- The notification box now scrolls from bottom to top -->
+        <div class="marquee-wrapper">
+            <div class="marquee-content">
+                Registration form along with payment verification for July 2022 Exam cycle of NIELIT O/A/B/C Level course is open till 10th April 2022 for both Direct & Institute candidates. For A/B/C Level for direct candidate registration date along with payment verification is till 31st March 2022 & for institute candidates till 10th April 2022. Institute/Candidates are advised not to wait for last to fill the registration form.
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
