@@ -1,0 +1,43 @@
+body
+{
+	background: burlywood
+    ;
+}
+#box
+{
+	width:800px;
+	height:800px;
+	background:yellow;
+	border:30px solid grey;
+	margin:auto;
+}
+.row
+{
+	height:100px;
+	width:100%;
+}
+.black,.white
+{
+	width:100px;
+	height:100px;
+	float:left;
+	text-align:center;
+	font-size:70px;
+	
+}
+.white
+{
+    background:orange;
+}
+
+.black
+{
+	background:black;
+	color:white;
+}
+h1
+{
+	font-family:cooper black;
+	text-align:center;
+	font-size:100px
+}
